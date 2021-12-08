@@ -1,0 +1,26 @@
+{
+  "name": "spotify-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "momentjs": "^2.0.0",
+    "mongoose": "^6.0.7",
+    "morgan": "^1.10.0",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "nodemon": "^2.0.12"
+  }
+}

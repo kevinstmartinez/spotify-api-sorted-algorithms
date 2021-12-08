@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  mongo: 
+    image: mongo
+    container_name: tracks
+    restart: always
+    ports: 
+      - "27017:27017"
+    volumes: 
+      - /Users/root1/Documents/2021-2s/Analisis de algoritmos/spotify-api/database:/data/db
+
