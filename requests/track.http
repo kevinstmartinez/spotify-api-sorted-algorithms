@@ -1,0 +1,43 @@
+
+GET http://localhost:9000/api/tracks
+
+###
+
+GET http://localhost:9000/api/popular
+
+###
+
+GET http://localhost:9000/api/duration
+
+###
+
+GET http://localhost:9000/api/track-number
+
+###
+POST http://localhost:9000/api/order-bubble
+Content-Type: application/json
+
+{
+  "dataNumber": 4000,
+  "steps": 40
+}
+
+###
+POST http://localhost:9000/api/order-selection
+Content-Type: application/json
+
+{
+  "dataNumber": 122,
+  "steps": 30
+}
+
+
+
+###
+POST http://localhost:9000/api/order-insert
+Content-Type: application/json
+
+{
+  "dataNumber": 122,
+  "steps": 30
+}

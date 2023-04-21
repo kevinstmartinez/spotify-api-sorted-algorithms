@@ -1,15 +1,18 @@
 
 import '../database'
 import Track from '../models/Track'
+import data from '../../data.json'
 
 const getTracksPlaylist = async (req, res) => {
   const tracks = await Track.find()
-  res.status(200).json({ Tracks: tracks })
+  return res.status(200).json({
+    Tracks: tracks
+  })
 }
 
 const mostPopularSongs = async (req, res) => {
   console.time('Time bubble-sort')
-  const tracks = await Track.find()
+  const tracks = await data
   let len = tracks.length
   for (let i = 0; i < len; ++i) {
     for (let j = 0; j < len - i - 1; ++j) {

@@ -8,7 +8,7 @@ const trackSchema = new Schema({
   duration: Number,
   trackNumber: Number,
   artists: String,
-  url: String
+  url: String 
 })
 
 module.exports = model('Track', trackSchema) 
